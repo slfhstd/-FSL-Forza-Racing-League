@@ -1,0 +1,133 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background: linear-gradient(90deg, #e94560 0%, #f17c5d 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  flex: 1;
+  text-align: left;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.app-header p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.app-nav {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: #0f3460;
+  color: #f0f0f0;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #1a4d7a;
+  transform: translateY(-2px);
+}
+
+.nav-button.active {
+  background-color: #e94560;
+  border-color: #f17c5d;
+  color: white;
+}
+
+.app-content {
+  flex: 1;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-left {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .app-nav {
+    flex-direction: column;
+  }
+
+  .nav-button {
+    width: 100%;
+  }
+
+  .app-content {
+    padding: 20px 10px;
+  }
+}

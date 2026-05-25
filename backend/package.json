@@ -1,0 +1,30 @@
+{
+  "name": "forza-racing-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Forza Horizon 6 race tracking app",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "migrate": "ts-node src/database.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "uuid": "^9.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^20.3.1",
+    "@types/uuid": "^9.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
