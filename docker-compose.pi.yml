@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   backend:
-    image: ghcr.io/YOUR_GITHUB_USERNAME/forza-racing/backend-latest:latest
+    image: ghcr.io/slfhstd/fsl-backend:latest
     ports:
       - "5000:5000"
     environment:
@@ -25,7 +23,7 @@ services:
       start_period: 40s
 
   frontend:
-    image: ghcr.io/YOUR_GITHUB_USERNAME/forza-racing/frontend-latest:latest
+    image: ghcr.io/slfhstd/fsl-frontend:latest
     ports:
       - "3000:3000"
     depends_on:
